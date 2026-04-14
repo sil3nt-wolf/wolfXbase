@@ -63,32 +63,17 @@ export default function Landing() {
               <span className="text-primary">wolf</span><span className="text-white">Xnode</span>
             </span>
           </div>
-          <div className="flex items-center gap-3">
-            <Link
-              to="/login"
-              className="px-4 py-2 text-sm font-mono text-gray-400 hover:text-primary border rounded-lg transition-all"
-              style={{ borderColor: 'hsl(120 100% 50% / 0.15)', background: 'transparent' }}
-            >
-              Sign In
-            </Link>
-            <Link
-              to="/login"
-              className="px-4 py-2 text-sm font-mono text-primary border rounded-lg transition-all hover:bg-primary/10"
-              style={{ borderColor: 'hsl(120 100% 50% / 0.4)', background: 'hsl(120 100% 50% / 0.06)' }}
-            >
-              Get Started →
-            </Link>
-          </div>
+          <div />
         </div>
       </nav>
 
       {/* ── Hero ── */}
       <section className="relative z-10 pt-28 pb-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono mb-8"
-            style={{ background: 'hsl(120 100% 50% / 0.06)', border: '1px solid hsl(120 100% 50% / 0.2)', color: 'hsl(120 100% 50% / 0.7)' }}>
-            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse inline-block" />
-            MongoDB v8.0 · Self-Hosted · REST API Ready
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-mono mb-8"
+            style={{ background: 'hsl(120 100% 50% / 0.12)', border: '1px solid hsl(120 100% 50% / 0.5)', color: 'hsl(120 100% 50% / 1)' }}>
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse inline-block" />
+            Self Hosting · 24/7 Online
           </div>
 
           <h1 className="font-display font-black tracking-tight mb-4" style={{ fontSize: 'clamp(3rem, 10vw, 7rem)', lineHeight: 1 }}>
