@@ -371,9 +371,9 @@ app.get('/og.png', async (req, res) => {
         '<rect width="400" height="210" fill="#050505"/>',
         '<rect x="0" y="0" width="1.4" height="210" fill="#00ff00" opacity="0.7"/>',
         '<text x="20" y="112" font-family="DejaVu Sans" font-size="44" font-weight="bold" filter="url(#g)">',
-        '<tspan fill="#00ff00">wolf</tspan><tspan fill="#ffffff">Xbase</tspan>',
+        '<tspan fill="#00ff00">wolf</tspan><tspan fill="#ffffff">Xnode</tspan>',
         '</text>',
-        '<text x="20" y="145" font-family="DejaVu Sans Mono" font-size="9" letter-spacing="1.5" fill="#00ff00" opacity="0.55">Manage. Connect. Control.</text>',
+        '<text x="20" y="145" font-family="DejaVu Sans Mono" font-size="9" letter-spacing="1.5" fill="#00ff00" opacity="0.55">Deploy. Manage. Scale.</text>',
         '</svg>',
       ].join('');
       _ogPngCache = await sharp(Buffer.from(svg)).png().toBuffer();

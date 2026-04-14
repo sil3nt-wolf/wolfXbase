@@ -60,7 +60,7 @@ export default function Landing() {
               <Zap className="w-5 h-5 text-primary" />
             </div>
             <span className="font-display font-bold text-lg tracking-widest">
-              <span className="text-primary">wolf</span><span className="text-white">Xbase</span>
+              <span className="text-primary">wolf</span><span className="text-white">Xnode</span>
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -93,11 +93,11 @@ export default function Landing() {
 
           <h1 className="font-display font-black tracking-tight mb-4" style={{ fontSize: 'clamp(3rem, 10vw, 7rem)', lineHeight: 1 }}>
             <span className="text-primary" style={{ filter: 'drop-shadow(0 0 10px hsl(120 100% 50% / 0.2))' }}>wolf</span>
-            <span className="text-white">Xbase</span>
+            <span className="text-white">Xnode</span>
           </h1>
 
           <p className="font-mono text-2xl tracking-[0.3em] mb-4" style={{ color: 'hsl(120 100% 50% / 0.6)' }}>
-            Manage. Connect. Control.
+            Deploy. Manage. Scale.
           </p>
 
           <p className="text-gray-500 font-mono text-sm max-w-xl mx-auto leading-relaxed mb-10">
@@ -201,7 +201,7 @@ export default function Landing() {
         <div className="max-w-2xl mx-auto text-center card p-10 neon-border">
           <Database className="w-10 h-10 text-primary mx-auto mb-5 animate-pulse-glow" />
           <h2 className="font-display font-black text-white text-2xl tracking-wide mb-3">Ready to manage your data?</h2>
-          <p className="text-gray-600 font-mono text-sm mb-7">Sign in to your wolfXbase dashboard and take control of your MongoDB databases.</p>
+          <p className="text-gray-600 font-mono text-sm mb-7">Sign in to your wolfXnode dashboard and take control of your MongoDB databases.</p>
           <Link
             to="/login"
             className="inline-flex items-center gap-2 px-8 py-3 font-mono font-semibold text-sm rounded-lg transition-all text-primary"
@@ -223,7 +223,7 @@ export default function Landing() {
               <span className="text-primary text-xs font-black">W</span>
             </div>
             <span className="font-display font-bold text-sm tracking-widest">
-              <span className="text-primary">wolf</span><span className="text-gray-500">Xbase</span>
+              <span className="text-primary">wolf</span><span className="text-gray-500">Xnode</span>
             </span>
           </div>
           <nav className="flex items-center gap-4 text-xs font-mono">
