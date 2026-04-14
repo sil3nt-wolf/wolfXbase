@@ -4,35 +4,35 @@ import { Zap, Database, Shield, Cpu, ArrowRight, Check, Server } from 'lucide-re
 const features = [
   {
     icon: Cpu,
-    title: 'Instant App Databases',
-    desc: 'Spin up an isolated MongoDB database per app in seconds. Auto-generates credentials and connection strings.',
+    title: 'Deploy Bots Instantly',
+    desc: 'Launch your WhatsApp bot on your own VPS in seconds. No shared hosting, no limits — full control over your instance.',
   },
   {
     icon: Shield,
-    title: 'Auth Built-In',
-    desc: 'Multi-user dashboard with session management. Each app gets its own MongoDB user with scoped permissions.',
+    title: 'Always Online',
+    desc: 'Keep your WhatsApp bot running 24/7 with auto-restart on failure, uptime monitoring, and zero downtime deployments.',
   },
   {
     icon: Server,
-    title: 'Atlas-Compatible API',
-    desc: 'Full REST API compatible with MongoDB Atlas Data API. Query and mutate data over HTTP with just an API key.',
+    title: 'Scale With Ease',
+    desc: 'Run multiple bot instances from one dashboard. Manage sessions, logs, and configs all in one place.',
   },
 ];
 
 const specs = [
   'Self-hosted on your own VPS',
-  'MongoDB v8.0 bundled',
-  'Multi-user dashboard access',
-  'Atlas-compatible REST API',
-  'Auto connection string generation',
-  'Real-time database browser',
+  'WhatsApp multi-session support',
+  'Auto-restart on crash',
+  '24/7 uptime monitoring',
+  'Secure session management',
+  'Real-time bot logs',
 ];
 
 const stats = [
   { value: '99.9%', label: 'Uptime' },
   { value: '24/7', label: 'Always On' },
-  { value: 'v8.0', label: 'MongoDB' },
-  { value: 'REST', label: 'API Ready' },
+  { value: '∞', label: 'Sessions' },
+  { value: 'Live', label: 'Monitoring' },
 ];
 
 export default function Landing() {
@@ -86,8 +86,8 @@ export default function Landing() {
           </p>
 
           <p className="text-gray-500 font-mono text-sm max-w-xl mx-auto leading-relaxed mb-10">
-            A self-hosted MongoDB management dashboard with a built-in Atlas-compatible REST API.
-            Deploy databases, manage users, and connect your apps — all from one place.
+            A self-hosted platform for running WhatsApp bots on your own VPS.
+            Deploy, monitor, and scale your bots — all from one place.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -123,17 +123,17 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── Connection string preview ── */}
+      {/* ── Bot config preview ── */}
       <section className="relative z-10 px-6 pb-20">
         <div className="max-w-3xl mx-auto card p-5 neon-border">
-          <p className="text-xs font-mono mb-3" style={{ color: 'hsl(120 100% 50% / 0.5)' }}>// Your auto-generated connection string</p>
+          <p className="text-xs font-mono mb-3" style={{ color: 'hsl(120 100% 50% / 0.5)' }}>// Your bot instance — live on your VPS</p>
           <div className="rounded-lg px-4 py-3 font-mono text-sm overflow-x-auto" style={{ background: '#050505', border: '1px solid hsl(120 100% 50% / 0.12)' }}>
-            <span className="text-gray-600">mongodb://</span>
-            <span className="text-primary">myapp</span>
-            <span className="text-gray-600">:••••••••@</span>
-            <span style={{ color: '#4488ff' }}>database.xwolf.space</span>
-            <span className="text-gray-600">:27018/</span>
-            <span className="text-primary">myapp</span>
+            <span className="text-gray-600">instance: </span>
+            <span className="text-primary">my-whatsapp-bot</span>
+            <span className="text-gray-600"> @ </span>
+            <span style={{ color: '#4488ff' }}>node.xwolf.space</span>
+            <span className="text-gray-600"> — status: </span>
+            <span className="text-primary">● online</span>
           </div>
         </div>
       </section>
@@ -185,8 +185,8 @@ export default function Landing() {
       <section className="relative z-10 px-6 pb-28">
         <div className="max-w-2xl mx-auto text-center card p-10 neon-border">
           <Database className="w-10 h-10 text-primary mx-auto mb-5 animate-pulse-glow" />
-          <h2 className="font-display font-black text-white text-2xl tracking-wide mb-3">Ready to manage your data?</h2>
-          <p className="text-gray-600 font-mono text-sm mb-7">Sign in to your wolfXnode dashboard and take control of your MongoDB databases.</p>
+          <h2 className="font-display font-black text-white text-2xl tracking-wide mb-3">Ready to deploy your bot?</h2>
+          <p className="text-gray-600 font-mono text-sm mb-7">Sign in to your wolfXnode dashboard and keep your WhatsApp bot running 24/7.</p>
           <Link
             to="/login"
             className="inline-flex items-center gap-2 px-8 py-3 font-mono font-semibold text-sm rounded-lg transition-all text-primary"
