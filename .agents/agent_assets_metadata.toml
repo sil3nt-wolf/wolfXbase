@@ -12,3 +12,9 @@ id = "RJEHwdy2EVx-HyInf2mhN"
 uri = "file://screenshots/wolfxcore-landing.jpg"
 type = "image"
 title = "wolfXcore — Game Server Management Panel"
+
+[[outputs]]
+id = "9vQl_HHOJ56Stw_lCzryR"
+uri = "file://screenshots/wolfxbase-hero.jpg"
+type = "image"
+title = "wolfXbase — MongoDB Management Dashboard"

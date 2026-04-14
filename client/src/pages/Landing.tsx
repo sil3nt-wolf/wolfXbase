@@ -61,15 +61,15 @@ export default function Landing() {
 
           <h1 className="font-display font-black tracking-tight mb-4" style={{ fontSize: 'clamp(3rem, 10vw, 7rem)', lineHeight: 1 }}>
             <span className="text-primary" style={{ filter: 'drop-shadow(0 0 10px hsl(120 100% 50% / 0.2))' }}>wolf</span>
-            <span className="text-white">Xcore</span>
+            <span className="text-white">Xbase</span>
           </h1>
 
           <p className="font-mono text-2xl tracking-[0.3em] mb-4" style={{ color: 'hsl(120 100% 50% / 0.6)' }}>
-            Deploy. Monitor. Control.
+            Manage. Connect. Control.
           </p>
 
           <p className="text-gray-500 font-mono text-sm max-w-xl mx-auto leading-relaxed mb-10">
-            wolfXcore is a high-performance game server management panel. Deploy, monitor, and control your servers from a single neon-lit command centre.
+            wolfXbase is a self-hosted MongoDB management dashboard with a built-in Atlas-compatible REST API. Deploy databases, manage users, and connect your apps — all from one place.
           </p>
 
         </div>
