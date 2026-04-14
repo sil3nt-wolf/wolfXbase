@@ -3,7 +3,7 @@
 > **Self-hosted MongoDB management, built for developers who move fast.**
 > By **WOLF TECH ~ Silent Wolf**
 
-![wolfXbase](https://raw.githubusercontent.com/sil3nt-wolf/wolfXbase/main/attached_assets/image_1776175889572.png)
+![wolfXbase](https://i.ibb.co/SwYFJBQN/Screenshot-2026-04-14-165928.png)
 
 ---
 
