@@ -76,20 +76,6 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── Bot config preview ── */}
-      <section className="relative z-10 px-6 pb-20">
-        <div className="max-w-3xl mx-auto card p-5 neon-border">
-          <p className="text-xs font-mono mb-3" style={{ color: 'hsl(120 100% 50% / 0.5)' }}>// Your bot instance — live on your VPS</p>
-          <div className="rounded-lg px-4 py-3 font-mono text-sm overflow-x-auto" style={{ background: '#050505', border: '1px solid hsl(120 100% 50% / 0.12)' }}>
-            <span className="text-gray-600">instance: </span>
-            <span className="text-primary">my-whatsapp-bot</span>
-            <span className="text-gray-600"> @ </span>
-            <span style={{ color: '#4488ff' }}>node.xwolf.space</span>
-            <span className="text-gray-600"> — status: </span>
-            <span className="text-primary">● online</span>
-          </div>
-        </div>
-      </section>
 
       {/* ── Features ── */}
       <section className="relative z-10 px-6 pb-24">
