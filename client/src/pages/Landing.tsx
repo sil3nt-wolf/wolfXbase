@@ -49,23 +49,6 @@ export default function Landing() {
       {/* Left neon bar */}
       <div className="fixed left-0 top-0 bottom-0 w-[3px] z-50" style={{ background: 'hsl(120 100% 50% / 0.6)' }} />
 
-      {/* ── Navbar ── */}
-      <nav className="relative z-40 border-b" style={{ borderColor: 'hsl(120 100% 50% / 0.1)', background: 'rgba(5,5,5,0.9)', backdropFilter: 'blur(12px)' }}>
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-9 h-9 rounded-lg flex items-center justify-center animate-pulse-glow"
-              style={{ background: 'hsl(120 100% 50% / 0.08)', border: '1px solid hsl(120 100% 50% / 0.3)' }}
-            >
-              <Zap className="w-5 h-5 text-primary" />
-            </div>
-            <span className="font-display font-bold text-lg tracking-widest">
-              <span className="text-primary">wolf</span><span className="text-white">Xnode</span>
-            </span>
-          </div>
-          <div />
-        </div>
-      </nav>
 
       {/* ── Hero ── */}
       <section className="relative z-10 pt-28 pb-20 px-6 text-center">
@@ -90,36 +73,6 @@ export default function Landing() {
             Deploy, monitor, and scale your bots — all from one place.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              to="/login"
-              className="flex items-center gap-2 px-7 py-3 font-mono font-semibold text-sm rounded-lg transition-all"
-              style={{ background: 'hsl(120 100% 50% / 0.1)', border: '1px solid hsl(120 100% 50% / 0.35)', color: 'hsl(120 100% 50%)' }}
-              onMouseEnter={e => (e.currentTarget.style.background = 'hsl(120 100% 50% / 0.18)')}
-              onMouseLeave={e => (e.currentTarget.style.background = 'hsl(120 100% 50% / 0.1)')}
-            >
-              Open Dashboard <ArrowRight className="w-4 h-4" />
-            </Link>
-            <a
-              href="https://github.com/sil3nt-wolf/wolf-mongoDB"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 py-3 font-mono text-sm text-gray-500 hover:text-gray-300 border rounded-lg transition-all"
-              style={{ borderColor: 'hsl(120 100% 50% / 0.1)' }}
-            >
-              View on GitHub
-            </a>
-          </div>
-        </div>
-
-        {/* Stats */}
-        <div className="mt-16 max-w-2xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {stats.map(s => (
-            <div key={s.label} className="card p-4 text-center">
-              <div className="text-2xl font-display font-black text-white">{s.value}</div>
-              <div className="text-xs font-mono mt-1" style={{ color: 'hsl(120 100% 50% / 0.5)' }}>{s.label}</div>
-            </div>
-          ))}
         </div>
       </section>
 
