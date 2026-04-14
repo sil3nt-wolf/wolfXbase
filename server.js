@@ -352,40 +352,6 @@ app.post(`${BASE}/aggregate`, apiAuth, checkConnected, async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
-// ── OG Image ──────────────────────────────────────────────────────────────────
-
-let _ogPngCache = null;
-
-app.get('/og.png', async (req, res) => {
-  try {
-    if (!_ogPngCache) {
-      const sharp = require('sharp');
-      const svg = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 400 210">',
-        '<defs>',
-        '<filter id="g" x="-5%" y="-5%" width="110%" height="110%">',
-        '<feGaussianBlur stdDeviation="2" result="b"/>',
-        '<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>',
-        '</filter>',
-        '</defs>',
-        '<rect width="400" height="210" fill="#050505"/>',
-        '<rect x="0" y="0" width="1.4" height="210" fill="#00ff00" opacity="0.7"/>',
-        '<text x="20" y="112" font-family="DejaVu Sans" font-size="44" font-weight="bold" filter="url(#g)">',
-        '<tspan fill="#00ff00">wolf</tspan><tspan fill="#ffffff">Xnode</tspan>',
-        '</text>',
-        '<text x="20" y="145" font-family="DejaVu Sans Mono" font-size="9" letter-spacing="1.5" fill="#00ff00" opacity="0.55">Deploy. Manage. Scale.</text>',
-        '</svg>',
-      ].join('');
-      _ogPngCache = await sharp(Buffer.from(svg)).png().toBuffer();
-    }
-    res.setHeader('Content-Type', 'image/png');
-    res.setHeader('Cache-Control', 'public, max-age=86400');
-    res.send(_ogPngCache);
-  } catch (e) {
-    console.error('[og] Failed to generate OG image:', e.message);
-    res.status(500).send('Image generation failed');
-  }
-});
 
 // ── Static Frontend ────────────────────────────────────────────────────────────
 
@@ -395,15 +361,12 @@ app.use(express.static(CLIENT_DIST, { index: false }));
 app.get('*', (req, res) => {
   const indexHtml = path.join(CLIENT_DIST, 'index.html');
   if (fs.existsSync(indexHtml)) {
-    // Inject absolute og:image URL so WhatsApp / social scrapers get a full URL
     const proto = req.headers['x-forwarded-proto'] || req.protocol || 'http';
     const host = req.headers['x-forwarded-host'] || req.get('host') || 'localhost';
     const baseUrl = `${proto}://${host}`;
-    const ogImageUrl = `${baseUrl}/og.png`;
 
     let html = fs.readFileSync(indexHtml, 'utf8');
     html = html
-      .replace(/content="\/og\.png"/g, `content="${ogImageUrl}"`)
       .replace(/<meta property="og:url"[^>]*>/g, '')
       .replace('</head>', `  <meta property="og:url" content="${baseUrl}" />\n  </head>`);
 
