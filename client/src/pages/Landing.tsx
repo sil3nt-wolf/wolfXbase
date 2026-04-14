@@ -61,16 +61,15 @@ export default function Landing() {
 
           <h1 className="font-display font-black tracking-tight mb-4" style={{ fontSize: 'clamp(3rem, 10vw, 7rem)', lineHeight: 1 }}>
             <span className="text-primary" style={{ filter: 'drop-shadow(0 0 10px hsl(120 100% 50% / 0.2))' }}>wolf</span>
-            <span className="text-white">Xnode</span>
+            <span className="text-white">Xcore</span>
           </h1>
 
           <p className="font-mono text-2xl tracking-[0.3em] mb-4" style={{ color: 'hsl(120 100% 50% / 0.6)' }}>
-            Deploy. Manage. Scale.
+            Deploy. Monitor. Control.
           </p>
 
           <p className="text-gray-500 font-mono text-sm max-w-xl mx-auto leading-relaxed mb-10">
-            A self-hosted platform for running WhatsApp bots on your own VPS.
-            Deploy, monitor, and scale your bots — all from one place.
+            wolfXcore is a high-performance game server management panel. Deploy, monitor, and control your servers from a single neon-lit command centre.
           </p>
 
         </div>

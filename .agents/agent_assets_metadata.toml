@@ -6,3 +6,9 @@ id = "s30RUf7Uxtwd0m1GW1fOd"
 uri = "file://screenshots/wolfxnode-landing.jpg"
 type = "image"
 title = "wolfXnode — Hero Only"
+
+[[outputs]]
+id = "RJEHwdy2EVx-HyInf2mhN"
+uri = "file://screenshots/wolfxcore-landing.jpg"
+type = "image"
+title = "wolfXcore — Game Server Management Panel"
