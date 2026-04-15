@@ -65,17 +65,10 @@ export default function Landing() {
           <div className="flex items-center gap-3">
             <Link
               to="/login"
-              className="px-4 py-2 text-sm font-mono text-gray-400 hover:text-primary border rounded-lg transition-all"
-              style={{ borderColor: 'hsl(120 100% 50% / 0.15)', background: 'transparent' }}
-            >
-              Sign In
-            </Link>
-            <Link
-              to="/login"
               className="px-4 py-2 text-sm font-mono text-primary border rounded-lg transition-all hover:bg-primary/10"
               style={{ borderColor: 'hsl(120 100% 50% / 0.4)', background: 'hsl(120 100% 50% / 0.06)' }}
             >
-              Get Started →
+              Sign In →
             </Link>
           </div>
         </div>
