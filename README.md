@@ -64,7 +64,7 @@ Deployed on a private VPS running Node.js on port `3001` behind an Nginx reverse
 ### Install & Run
 
 ```bash
-git clone https://github.com/sil3nt-wolf/wolf-mongoDB.git
+git clone https://github.com/sil3nt-wolf/wolfXbase
 cd wolf-mongoDB
 
 # Install server dependencies
